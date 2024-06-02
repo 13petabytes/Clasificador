@@ -1,13 +1,14 @@
 #ifndef Libro_h
 #define Libro_h
-#include <stdio.h>
-#include <iostream>
 #include <fstream>
 #include <string>
-#include "Registrador.h"
+#include <iostream>
+#include <stdio.h>
+#include <string>
+#include "Item.h"
 using namespace std;
 
-class Libro:public Registrador{
+class Libro:public Item{
 protected:
   string libroTxt;
 public:
@@ -18,8 +19,6 @@ public:
   string getLibroTxt();
   void setLibroTxt(string);
   //metodos
-  void escribir();
-  string buscar() override;
   void unirTXT() override;
   void creadorLibrotxt();
 };

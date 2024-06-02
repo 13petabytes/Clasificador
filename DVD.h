@@ -1,13 +1,14 @@
 #ifndef DVD_h
 #define DVD_h
-#include <stdio.h>
-#include <iostream>
 #include <fstream>
 #include <string>
-#include "Registrador.h"
+#include <iostream>
+#include <stdio.h>
+#include <string>
+#include "Item.h"
 using namespace std;
 
-class DVD:public Registrador{
+class DVD:public Item{
 protected:
   string dvdTxt;
 public:
@@ -18,8 +19,6 @@ public:
   string getDVDtxt();
   void setDVDtxt(string);
   //metodos
-  void escribir();
-  string buscar() override;
   void unirTXT() override;
   void creadorDvdtxt();
 };

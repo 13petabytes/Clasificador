@@ -1,13 +1,14 @@
 #ifndef Figuras_h
 #define Figuras_h
-#include <stdio.h>
-#include <iostream>
 #include <fstream>
 #include <string>
-#include "Registrador.h"
+#include <iostream>
+#include <stdio.h>
+#include <string>
+#include "Item.h"
 using namespace std;
 
-class Figuras:public Registrador{
+class Figuras:public Item{
 protected:
   string figuraTxt;
 public:
@@ -18,8 +19,6 @@ public:
   string getFiguraTxt();
   void setFiguraTxt(string);
   //metodos
-  void escribir();
-  string buscar() override;
   void unirTXT() override;
   void creadorFiguraTxt();
 };
