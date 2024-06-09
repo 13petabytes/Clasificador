@@ -8,7 +8,7 @@
 using namespace std;
 
 class Registrador{
-protected:
+private:
   string txt;
 public:
   //constructor y destructor
