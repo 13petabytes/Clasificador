@@ -29,6 +29,7 @@ void Registrador::archivar(){
 }
 
 void Registrador::buscar(string letra){
+  int x = 0;
   string nombreb;
   int cajasb;
   cout<<"Incerte el nombre de la figura:"<<endl;
@@ -43,13 +44,17 @@ void Registrador::buscar(string letra){
     archivo>>lineaComparar;
     if (lineaComparar == busqueda){
       cout<<"La Figura se encuentra en la base de datos"<<endl;
+      x =1;
       break;
     }
   }
-  cout<<"La Figura no se encuentra en la base de datos"<<endl;
+  if (x == 0){
+    cout<<"La Figura no se encuentra en la base de datos"<<endl;
+  }
 }
 
 void Registrador::buscar(int numero){
+  int x = 0;
   int tipob;
   string nombreb;
   cout<<"Incerte el tipo de DVD que va a buscar:"<<endl;
@@ -84,14 +89,18 @@ void Registrador::buscar(int numero){
       archivo>>lineaComparar;
       if (lineaComparar == busqueda){
         cout<<"El DVD se encuentra en la base de datos"<<endl;
+        x = 1;
         break;
       }
     }
-    cout<<"El DVD no se encuentra en la base de datos"<<endl;
+  if (x == 0){
+    cout<<"La Figura no se encuentra en la base de datos"<<endl;
+  }
     
 }
 
 void Registrador::buscar(string letra, int numero){
+  int x = 0;
   int tipo;
   string nombreb;
   cout<<"Incerte el tipo del Libro que va a buscar:"<<endl;
@@ -116,9 +125,12 @@ void Registrador::buscar(string letra, int numero){
       archivo>>lineaComparar;
       if (lineaComparar == busqueda){
         cout<<"El Libro se encuentra en la base de datos"<<endl;
+        x = 1;
         break;
       }
     }
-    cout<<"El Libro no se encuentra en la base de datos"<<endl;
+  if (x == 0){
+    cout<<"La Figura no se encuentra en la base de datos"<<endl;
+  }
 
 }
