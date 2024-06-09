@@ -25,7 +25,7 @@ void Figuras::unirTXT(){
   texto = '3'+ figuraTxt;
 }
 
-void Figuras::creadorFiguraTxt(){
+void Figuras::crearItem(){
   string nombre;
   int cajasint;
   cout<<"Incerte el nombre de la figura:"<<endl;
