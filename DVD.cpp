@@ -25,7 +25,7 @@ void DVD::unirTXT(){
   texto = '2'+ dvdTxt;
 }
 
-void DVD::creadorDvdtxt(){
+void DVD::crearItem(){
   int tipo;
   string nombre;
   cout<<"Incerte el tipo de DVD que va a archivar:"<<endl;
