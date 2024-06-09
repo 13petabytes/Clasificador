@@ -25,7 +25,7 @@ void Libro::unirTXT(){
   texto = '1'+ libroTxt;
 }
 
-void Libro::creadorLibrotxt(){
+void Libro::crearItem(){
   int tipo;
   string nombre;
   cout<<"Incerte el tipo del Libro que va a archivar:"<<endl;
